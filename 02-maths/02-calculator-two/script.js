@@ -13,6 +13,41 @@ function test() {
     return true;
 }
 
+var a, b;
+
+a = 1;
+b = 2
+
+
+var a, b;
+
+a = 1;
+b = 2;
+
+function Calculation(a, b, op) {
+
+    switch (op) {
+
+        alert("+-*/");
+
+        case '+':
+            return a + b
+            break;
+        case '-':
+            return a - b
+            break;
+        case '*':
+            return a * b
+            break;
+        case '/':
+            return a / b
+            break;
+
+            alert("true");
+    }
+
+}
+
 (function() {
     return true;
 })();
