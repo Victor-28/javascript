@@ -9,12 +9,27 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
 
+
+
+
+(function(){
     document.getElementById("run").addEventListener("click", function() {
+
+
+    for (var i = 1; i<= 21; i++)
+    {
+        alert (Math.pow(i ,2))
+    }
+
+
+
+
+
 
         // your code here
 
     });
 
 })();
+// working around knowing how loop work
