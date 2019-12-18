@@ -15,8 +15,19 @@
 
     document.getElementById("run").addEventListener("click", function() {
 
-        // your code here
+        var  number = parseFloat(document.getElementById( "number").value);
 
+            if(number == 0 || number ==1)
+                return 1;
+
+            for (var i = number - 1; i >= 1; i--){
+                number=number*i;
+            }
+            alert("The factorial is: " + number);
     });
 
+
 })();
+
+
+//factoria my understanding is 5! :4:4:3:2:1   anf using for loop
