@@ -9,43 +9,33 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-function test() {
-    return true;
-}
-
-var a, b;
-
-a = 1;
-b = 2
 
 
-var a, b;
 
-a = 1;
-b = 2;
 
-function Calculation(a, b, op) {
+function Calculation(victor) {
+    var n1 = parseFloat(document.getElementById("op-one").value);
+    var n2 = parseFloat(document.getElementById("op-two").value);
 
-    switch (op) {
+    var result;
 
-        alert("+-*/");
+    switch (victor) {
 
-        case '+':
-            return a + b
+        case 'addition':
+            result = n1+n2;
             break;
-        case '-':
-            return a - b
+        case 'substraction':
+            result = n1-n2;
             break;
-        case '*':
-            return a * b
+        case 'multiplication':
+            result = n1*n2;
             break;
-        case '/':
-            return a / b
+        case 'division':
+            result = n1/n2;
             break;
 
-            alert("true");
     }
-
+            alert("the result is " + result);
 }
 
 (function() {
