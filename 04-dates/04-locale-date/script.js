@@ -9,10 +9,22 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+
+
+
+function test() {
+    var currentdate = new Date();
+    var datetime = "Last Sync: " + currentdate.getDay() + "/" + currentdate.getMonth()
+        + "/" + currentdate.getFullYear() + " @ "
+        + currentdate.getHours() + ":"
+        + currentdate.getMinutes() + ":" + currentdate.getSeconds();
+
+    document.getElementById("target").innerHTML = datetime;
 
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
 
     // your code here
 
-})();
+}
+
+test();
