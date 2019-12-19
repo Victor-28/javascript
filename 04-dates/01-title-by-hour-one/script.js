@@ -11,7 +11,32 @@
 
 (function() {
 
+        var greeting;
+        var hour = new Date().getHours();
+    if (hour < 18) {
+        greeting = "Good day";
+    }
+        else {
+            greeting = "Good evening";
+        }
+
+        document.getElementById("target").innerHTML = greeting;
+
+
+
+
+
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
+
+
+
+:: making var greeting en time, and if else statement
+
+
+
+
+
+
 
     // your code here
     // reading stuff
