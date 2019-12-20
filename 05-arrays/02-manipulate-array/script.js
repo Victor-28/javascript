@@ -22,7 +22,7 @@ document.getElementById("run").addEventListener("click", function() {
         "raisin",
         "cherry"
     ];
-    
+
         fruits.pop();
         fruits.shift();
         fruits.push("Kiwi");
@@ -33,3 +33,5 @@ document.getElementById("run").addEventListener("click", function() {
 
 
 });
+
+// using pop, shift,push and unshiftS
