@@ -9,9 +9,9 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
 
-    var fruits = [
+    document.getElementById("run").addEventListener("click", function() {
+    var value = [
         "pomme",
         "poire",
         "fraise",
@@ -23,9 +23,16 @@
         "durian",
         "pêche",
         "raisin",
-        "cerise",
+        "cerise"
     ];
+    var text = "";
+    var i;
+    for (i = 0; i < value.length; i++) {
+        text += (i +" ");
+    }
 
+
+    console.log(text);
     // your code here
 
-})();
+});
