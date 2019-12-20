@@ -9,10 +9,9 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
-
+document.getElementById("run").addEventListener("click", function() {
     var fruits = [
-        "pomme",
+        "apple",
         "poire",
         "fraise",
         "tomate",
@@ -21,9 +20,16 @@
         "durian",
         "pêche",
         "raisin",
-        "cerise",
+        "cherry"
     ];
+    
+        fruits.pop();
+        fruits.shift();
+        fruits.push("Kiwi");
+        fruits.unshift("banana");
+    console.log(fruits);
 
-    // your code here
 
-})();
+
+
+});
