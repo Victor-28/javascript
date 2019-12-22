@@ -9,7 +9,7 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+document.getElementById("run").addEventListener("click", function () {
 
     var people = [
         {
@@ -91,4 +91,13 @@
 
     // your code here
 
-})();
+for(var i = 0; i < people.length; i++) {
+    if (people[i].firstname == "Gabe" && people[i].lastname == "Keatch") {
+        console.log(people[i].email + " The index of this person is: " + i);
+    }
+}
+
+});
+
+
+// still confussed , I can wait till tomr, I will get to the root if this
