@@ -35,3 +35,5 @@ if (fruits.includes("apple") == true)
 else
     console.log("We found no apple. It is such a shame.");
 });
+
+//condition yes/no and replies
