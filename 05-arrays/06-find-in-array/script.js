@@ -91,8 +91,8 @@ document.getElementById("run").addEventListener("click", function () {
 
     // your code here
 
-for(var i = 0; i < people.length; i++) {
-    if (people[i].firstname == "Gabe" && people[i].lastname == "Keatch") {
+    for(var i = 0; i < people.length; i++) {
+    if (people[i].firstname == "Jean" && people[i].lastname == "Dupont") {
         console.log(people[i].email + " The index of this person is: " + i);
     }
 }
