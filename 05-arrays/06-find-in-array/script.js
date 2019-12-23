@@ -100,4 +100,4 @@ document.getElementById("run").addEventListener("click", function () {
 });
 
 
-// still confussed , I can wait till tomr, I will get to the root if this
+// using == && 
