@@ -9,8 +9,8 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
 
+    document.getElementById("run").addEventListener("click", function () {
     var fruits = [
         "cerise",
         "durian",
@@ -25,9 +25,19 @@
         "pêche",
         "cerise",
         "raisin",
-        "cerise",
+        "cerise"
     ];
 
-    // your code here
 
-})();
+
+        fruits = fruits.filter( function( item, index, inputArray ) {
+            return inputArray.indexOf(item) === index;
+        });
+
+      console.log(fruits);
+
+                // your code here
+
+});
+
+    // declaring the variable and function
