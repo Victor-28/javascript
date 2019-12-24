@@ -18,6 +18,6 @@
         p.innerHTML = "owned";
     })
 
-
+// doc.quarySelectorAll
 
 })();
