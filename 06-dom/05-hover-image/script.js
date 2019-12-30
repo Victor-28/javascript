@@ -12,11 +12,18 @@
 
 
 
-var image = document.getElementById("hover-example");
-image.onmouseover = function() {  image.src = "../../family.jpg"; }
-image.onmouseout = function() {  image.src = "../../Dishes.jpeg"; }
+document.getElementById("kick").addEventListener("mouseover", mouseOver);
+document.getElementById("kick").addEventListener("mouseout", mouseOut);
+var image = document.getElementById("kick");
+var source= image.getAttribute("src");
+var hover= image.getAttribute("data-hover");
+
+function mouseOver(){
+    image.setAttribute("src",hover);
+}
+function mouseOut(){
+    image.setAttribute("src",source);
+}
 
 
-
-// hover not working yet
-// this another code not working yet
+//
