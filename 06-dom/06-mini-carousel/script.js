@@ -27,7 +27,7 @@ document.getElementById("next").addEventListener("click",function() {
         image.setAttribute("src", gallery[i]);
         i++;
     }
-    else if (i = gallery.length) {
+    else if (i === gallery.length) {
         i = 0;
         image.setAttribute("src", gallery[i]);
     }
