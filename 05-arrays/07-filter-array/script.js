@@ -85,7 +85,7 @@ document.getElementById("run").addEventListener("click", function () {
         {
             firstname: "Reinaldo",
             lastname: "Grimbleby",
-            age: 81,
+            age: 81
         },
     ];
 
@@ -100,3 +100,7 @@ for (var i = 0; i < people.length; i++) {
 }
 console.log("The resulting array is: " + ages);
 });
+
+
+// making var
+// if statement on people who are more than 18 years of age
