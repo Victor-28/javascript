@@ -10,15 +10,25 @@
 // You will have time to focus on it later.
 
 // your code here
-
-var x=460
+var firstButton=460;
 document.getElementById("slider").addEventListener("change", function () {
-
-    x++;
-    if (x>499){
-        x=460;
+    document.getElementById("target").innerHTML = "";
+    document.getElementById("part-one").innerHTML = "";
+    firstButton++;
+    if (firstButton>499){
+        firstButton=460;
     }
-};
+});
+----------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
 
     var t=00
 document.getElementById("slider").addEventListener("change", function () {
