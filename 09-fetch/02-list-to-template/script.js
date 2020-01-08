@@ -11,4 +11,29 @@
 
 (() => {
     // your code here
+
+    document.getElementById("run").addEventListener("click", function(){
+
+        fetch("../../_shared/api.json")
+            .then(function(response){
+                return response.json();
+            })
+            .then(function(data){
+
+                console.log(data.heroes);
+
+    data.heroes.forEach(function(hero){
+    var temp = document.getElementById
+    ("tpl-hero").content.cloneNode(true);
+    temp.querySelector(".name").innerHTML = hero.name;
+    temp.querySelector(".alter-ego").innerHTML = hero.alterEgo;
+    temp.querySelector(".powers").innerHTML = hero.abilities;
+    document.getElementById("target").appendChild   (temp);
+
+    })
+})
+});
+
+
 })();
+
