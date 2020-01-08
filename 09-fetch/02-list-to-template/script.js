@@ -9,31 +9,41 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
+
+
+
 (() => {
-    // your code here
-
-    document.getElementById("run").addEventListener("click", function(){
-
-        fetch("../../_shared/api.json")
-            .then(function(response){
-                return response.json();
-            })
-            .then(function(data){
-
-                console.log(data.heroes);
-
-    data.heroes.forEach(function(hero){
-    var temp = document.getElementById
-    ("tpl-hero").content.cloneNode(true);
-    temp.querySelector(".name").innerHTML = hero.name;
-    temp.querySelector(".alter-ego").innerHTML = hero.alterEgo;
-    temp.querySelector(".powers").innerHTML = hero.abilities;
-    document.getElementById("target").appendChild   (temp);
-
-    })
-})
-});
 
 
-})();
+
+
+
+
+                            document.getElementById("run").addEventListener("click", function(){
+
+                                fetch("http://localhost:63342/javascript/09-fetch/02-list-to-template/api.json")
+                                    .then(function(response){
+                                        return response.json();
+                                    })
+                                    .then(function(data){
+
+                                        console.log(data.heroes);
+
+                                        data.heroes.forEach(function(hero){
+                                            var temp = document.getElementById
+                                            ("tpl-hero").content.cloneNode(true);
+                                            temp.querySelector(".name").innerHTML = hero.name;
+                                            temp.querySelector(".alter-ego").innerHTML =
+                                                hero.alterEgo;
+                                            temp.querySelector(".powers").innerHTML = hero
+                                                .abilities;
+
+                                            document.getElementById("target").appendChild
+                                            (temp);
+
+                                        })
+                                    })
+                            })
+                        })();
+
 
