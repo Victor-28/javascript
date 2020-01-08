@@ -10,5 +10,22 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+
+    document.getElementById("run").addEventListener("click", function(){
+
+        fetch("http://localhost:63342/javascript/09-fetch/03-details/api.json")
+            .then(function(response){
+                return response.json();
+            })
+            .then(function(data){
+
+                var temp = document.getElementById("tpl-hero").content.cloneNode(true);
+                var i = document.getElementById("hero-id").value;
+                temp.querySelector(".name").innerHTML = data.heroes[i-1].name;
+                temp.querySelector(".alter-ego").innerHTML = data.heroes[i-1].alterEgo;
+                temp.querySelector(".powers").innerHTML = data.heroes[i-1].abilities;
+
+                document.getElementById("target").appendChild(temp);
+})
+})
 })();
