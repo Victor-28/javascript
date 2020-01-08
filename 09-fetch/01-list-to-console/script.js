@@ -23,5 +23,5 @@ fetch("../../_shared/api.json")
 
 
 
-
+//the x-man  in the console
 //console.log(Console);
